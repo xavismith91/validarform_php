@@ -23,7 +23,8 @@
   <br>
   <!-- Campo Correo -->
   <label for="correo">Correo:</label>
-  <input type="email" id="correo" name="correo" required>
+  <br>
+  <input type="text" id="correo" name="correo" required>
   <br>
   <!-- Campo Usuario -->
   <label for="usuario">Usuario:</label>
@@ -35,7 +36,8 @@
   <br>
   <!-- Campo Teléfono -->
   <label for="telefono">Teléfono:</label>
-  <input type="tel" id="telefono" name="telefono" required>
+  <br>
+  <input type="text" id="telefono" name="telefono" required>
   <br>
   <!-- Botón de Registro -->
   <center><input type="submit" name="submit" value="Iniciar Sesión" class="btn btn-primary required parrafo"></center>
