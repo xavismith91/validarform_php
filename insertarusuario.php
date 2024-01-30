@@ -40,7 +40,7 @@
 
     if (mysqli_query($conn,$sql)){
      
-     header("location:home.php");
+     header("location:login.php");
     }
         else
 {
