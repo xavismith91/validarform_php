@@ -1,13 +1,13 @@
 <?php
     session_start();
-
+    
     //declaramos las variables a usar para la insercion a la base de datos 
-    $nombre= $_POST['nombre'];
-    $apellidos= $_POST['apellidos'];
-    $correo= $_POST['correo'];
-    $usuario= $_POST['usuario'];
-    $contrasena= $_POST['contrasena'];
-    $telefono= $_POST['telefono'];
+    $nombre = $_POST['nombre'];
+    $apellidos = $_POST['apellidos'];
+    $correo = $_POST['correo'];
+    $usuario = $_POST['usuario'];
+    $contrasena = $_POST['contrasena'];
+    $telefono = $_POST['telefono'];
 
 
 
@@ -26,26 +26,31 @@
 
     // verificamos la conexión con el siguiente query
 
-    if (!$conn) {
-        die("Falló la conexión". mysqli_connect_error());
+    // if (!$conn) {
+    //     die("Falló la conexión". mysqli_connect_error());
     
-    }else
-    echo"Conexión exitosa";
+    // }else
+    // echo"Conexión exitosa";
 
 
 
     //realizamos el query para hacer la inserción de registros dentro de la base de datos 
 
-    $sql= "INSERT INTO usuarios (nombre,apellidos,correo,usuario,contrasena,telefono) VALUES ($nombre,$apellidos,$correo,$usuario,$contrasena,$telefono)";
-    if (mysqli_query($conn, $sql)) {
-        header("Location:home.php");
-     } else {
-        '<script type="text/javascript">
-        alert("No se pudo completar el registro");
-        window.location.href="insertarusuario.php";
-        </script>';
-     }
+    $sql = "INSERT INTO users (nombre,apellidos,correo,usuario,contrasena,telefono) VALUES ('$nombre','$apellidos','$correo','$usuario','$contrasena','$telefono')";
 
-     mysqli_close($conn);
+    if (mysqli_query($conn,$sql)){
+     
+     header("location:home.php");
+    }
+        else
+{
+   echo'<script type="text/javascript">
+        alert("No se pudo completar el registro");
+        window.location.href="index.php";
+        </script>';
+}
+mysqli_close($conn);
+?>
+
 
 ?>

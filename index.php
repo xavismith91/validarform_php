@@ -1,7 +1,3 @@
-
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,9 +9,10 @@
     <title>Validación con Formulario en PHP</title>
 </head>
 <body>
-<h2>Registro</h2>
+
 <div>
 <form action="insertarusuario.php" method="post">
+<center><h2>Registro</h2></center>
   <!-- Campo Nombre -->
   <label for="nombre">Nombre:</label>
   <input type="text" id="nombre" name="nombre" required>
