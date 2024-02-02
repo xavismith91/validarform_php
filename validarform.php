@@ -15,7 +15,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $sql = "SELECT * FROM users WHERE usuario = '$usuario' AND contrasena = '$contrasena'";
     $result = $conn->query($sql);
 
-(    if($result->num_rows > 0) {
+ 
+       if($result->num_rows > 0) {
         // Usuario y contraseña son correctos
         $_SESSION['usuario'] = $usuario;
         $_SESSION['contrasena'] = $contrasena;
