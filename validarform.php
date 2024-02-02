@@ -1,13 +1,13 @@
 <?php
 session_start();
 
-    $varsesion = $_SESSION['usuario'];
-    if ($varsesion == null || $varsesion = '') {
-        echo'No tienes acceso a esta sección';   
-        die();
-    }
+    // $varsesion = $_SESSION['usuario'];
+    // if ($varsesion == null || $varsesion = '') {
+    //     echo'No tienes acceso a esta sección';   
+    //     die();
+    // }
 
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
+if ($_SERVER["REQUEST_METHODd"] == "POST") {
     $usuario = $_POST['usuario'];
     $contrasena = $_POST['contrasena'];
 
