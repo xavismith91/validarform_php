@@ -4,7 +4,7 @@ $usuario = $_POST['usuario'];
 $contrasena = $_POST['contrasena'];
 
 
-$conexion=mysqli_connect("localhost", "root", "", "test");
+$conexion=mysqli_connect("localhost", "root", "", "loginsesion");
 
 if ($conn->connect_error) 
 

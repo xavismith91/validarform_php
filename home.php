@@ -1,12 +1,4 @@
-<?php  
-    session_start(); // reanuda la sessión actual dentro de esta sección de la página
-    error_reporting(0); // para que no aparezcan los errores que lanza php en caso de que existan 
-    $varsesion = $_SESSION['usuario'];
-    if ($varsesion == null || $varsesion = '') {
-        echo'No tienes acceso a esta sección';   
-        die();
-    }
-?>
+
 
 <!DOCTYPE html>
 <html lang="en">
