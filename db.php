@@ -1,5 +1,8 @@
 <?php
 
+session_start();
+
+
 $usuario = $_POST['usuario'];
 $contrasena = $_POST['contrasena'];
 

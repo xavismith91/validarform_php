@@ -1,5 +1,5 @@
 <?php
-    session_start();
+    // session_start();
     
     //declaramos las variables a usar para la insercion a la base de datos 
     $nombre = $_POST['nombre'];

@@ -16,7 +16,7 @@ if($filas) {
 }else{
     include("index.php");
     ?>
-    <h1> ERROR DE AUTENTIFICACION</h1>
+    <h1> ERROR DE AUTENTICACIÓN</h1>
     <?php
 }
 
