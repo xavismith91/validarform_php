@@ -13,9 +13,17 @@ session_start();
     <title>Bienvenido</title>
 </head>
 <body>
-    <h1> Bienvenido al sistema  </h1>
-    <p>User: <?php  echo $_SESSION['usuario']?> </p>
+    <h1> Bienvenido al Sistema  </h1>
+    <p>User:  </p>
     <a href="cerrar_session.php">Cerrar Sesion</a>
 
 </body>
+
+
+
+<?php
+
+session_destroy();
+
+?>
 </html>

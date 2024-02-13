@@ -1,14 +1,13 @@
 <?php  
     session_start();
-    session_destroy();
     
-    $varsesion = $_SESSION['usuario'];
-    if ($varsesion == null || $varsesion = '') {
-        echo'No tienes acceso a esta sección';   
-        die();
+    if(isset($_SESSION['usuario'])){
+        echo "existe sesion";
+        session_destroy();
+        header("location:index.php");
+    }else{
+        echo "No existe sesión";
+        header("location:index.php");
     }
-
-    session_destroy();
-    header('Location:index.php');
 
 ?>

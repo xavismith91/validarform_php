@@ -1,5 +1,7 @@
 <?php
+
 include('db.php');
+error_reporting(0);
 
 $USUARIO=$_POST['usuario'];
 $PASSWORD=$_POST['contrasena'];
@@ -16,7 +18,9 @@ if($filas) {
 }else{
     include("index.php");
     ?>
-    <h1> ERROR DE AUTENTICACIÓN</h1>
+
+    echo '<script>Swal.fire("SweetAlert2 is working!");</script>'
+    <!-- echo '<script language="javascript">alert("Verifica tu Información");</script>'; -->
     <?php
 }
 

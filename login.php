@@ -25,7 +25,11 @@ session_start();
         <label for="contrasena">Contraseña:</label>
         <input type="password" id="contrasena" name="contrasena" required>
         <br>
-        <button type="submit">Iniciar sesión</button>
+        <center><div>
+        <button type="submit">Iniciar sesión</button> 
+          <a href="registro.php">Crear Cuenta</a>
+        </div>
+        </center>
     </form>
 </body>
 </html>
